@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Cocktail = (props) => {
-  return (
-    <li></li>
-  )
-}
+const Cocktail = props => {
+  return;
+};
 
-export default Cocktail
+export default Cocktail;

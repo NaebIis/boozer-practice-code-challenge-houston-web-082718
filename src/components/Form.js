@@ -1,37 +1,43 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class Form extends Component {
-  render(){
+  render() {
     return (
-      <form>
+      <form onSubmit={this.props.addNewCocktail}>
         <h3>Create a Cocktail</h3>
 
         <p>Name</p>
-        <input type="text"/>
+        <input type="text" />
 
         <p>Description</p>
-        <input type="text"/>
+        <input type="text" />
 
         <p>Instructions</p>
-        <input type="text"/>
+        <input type="text" />
 
         <h3>Proportions</h3>
         <div className="container">
-          <p>Ingredient Name<br/>
-          <input type="text"/>
+          <p>
+            Ingredient Name
+            <br />
+            <input type="text" />
           </p>
 
-          <p>Quantity<br/>
-          <input type="text"/>
+          <p>
+            Quantity
+            <br />
+            <input type="text" />
           </p>
         </div>
 
-        <p><button> + </button></p>
+        <p>
+          <button> + </button>
+        </p>
 
-        <input type="submit"/>
+        <input type="submit" />
       </form>
-    )
+    );
   }
 }
 
-export default Form
+export default Form;
